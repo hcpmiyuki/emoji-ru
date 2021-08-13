@@ -1,7 +1,7 @@
 import Button from '../../atoms/Button.js'
 
 function TweetButton(props) {
-  const emoji_ruUrl = encodeURIComponent('http://localhost:3000/');
+  const emoji_ruUrl = encodeURIComponent(process.env.REACT_APP_HOME_PATH);
   const tweetEmojized = encodeURIComponent(props.tweetEmojized ? props.tweetEmojized : 'えもじ〜るでぶっきらぼうなツイートを駆逐しよう🌟');
   const hashtags = 'えもじ〜る';
   // Twitter用のurl作成
