@@ -25,7 +25,7 @@ function App() {
     const emojiLevel = event.target.elements.emojiLevel.value;
 
     if (!tweet) {
-      setErrorMsg('ツイートが入力されていません😢');
+      setErrorMsg('テキストが入力されていません😢');
       setTweetEmojized(tweetEmojizedDefault);
       return;
     }
@@ -37,7 +37,7 @@ function App() {
       })
       .catch((error) => {
         console.log(error);
-        setErrorMsg('失敗してしまいました...ツイートの内容を変えてもう一度お試しください😢');
+        setErrorMsg('失敗してしまいました...テキストの内容を変えてもう一度お試しください😢');
         setTweetEmojized(tweetEmojizedDefault);
       })
       .finally(() => {

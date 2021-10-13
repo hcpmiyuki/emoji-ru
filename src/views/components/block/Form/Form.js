@@ -16,7 +16,7 @@ function Form(props) {
         name='tweet'
         maxLength='180'
         rows='6'
-        placeholder='180字以内でツイートを入力してください✏️'
+        placeholder='180字以内でテキストを入力してください✏️'
       />
       <FormRadioButtons
         name='emojiLevel'
